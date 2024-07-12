@@ -2,11 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1c1c1c; /* Very dark grey background */
+    color: #00ffcc; /* Bright blue with a bit of green letters */
+}
+
+a {
+    color: #00ffcc; /* Bright blue with a bit of green letters */
+    text-decoration: none;
 }
 
 .header {
-    background-color: black;
     height: 50vh;
+    background-color: black;
 }
 
 .projects-list {
@@ -27,6 +34,5 @@ body {
 
 .projects-list a {
     text-decoration: none;
-    color: blue;
     font-size: 18px;
 }
