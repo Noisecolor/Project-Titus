@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Project-Titus/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Project-Titus/static/js/main.a585deae.chunk.js",
-    "main.js.map": "/Project-Titus/static/js/main.a585deae.chunk.js.map",
-    "runtime-main.js": "/Project-Titus/static/js/runtime-main.dffb893c.js",
-    "runtime-main.js.map": "/Project-Titus/static/js/runtime-main.dffb893c.js.map",
-    "static/js/2.0d284d21.chunk.js": "/Project-Titus/static/js/2.0d284d21.chunk.js",
-    "static/js/2.0d284d21.chunk.js.map": "/Project-Titus/static/js/2.0d284d21.chunk.js.map",
+    "main.js": "/Project-Titus/static/js/main.ccfe7282.chunk.js",
+    "main.js.map": "/Project-Titus/static/js/main.ccfe7282.chunk.js.map",
+    "runtime-main.js": "/Project-Titus/static/js/runtime-main.8db70fae.js",
+    "runtime-main.js.map": "/Project-Titus/static/js/runtime-main.8db70fae.js.map",
+    "static/js/2.d60f33cb.chunk.js": "/Project-Titus/static/js/2.d60f33cb.chunk.js",
+    "static/js/2.d60f33cb.chunk.js.map": "/Project-Titus/static/js/2.d60f33cb.chunk.js.map",
     "index.html": "/Project-Titus/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/Project-Titus/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.0d284d21.chunk.js.LICENSE.txt": "/Project-Titus/static/js/2.0d284d21.chunk.js.LICENSE.txt"
+    "static/js/2.d60f33cb.chunk.js.LICENSE.txt": "/Project-Titus/static/js/2.d60f33cb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.dffb893c.js",
-    "static/js/2.0d284d21.chunk.js",
+    "static/js/runtime-main.8db70fae.js",
+    "static/js/2.d60f33cb.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.a585deae.chunk.js"
+    "static/js/main.ccfe7282.chunk.js"
   ]
 }
