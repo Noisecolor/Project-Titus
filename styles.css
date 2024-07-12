@@ -1,19 +1,32 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #212121;
     margin: 0;
     padding: 0;
+}
+
+.header {
+    background-color: black;
+    height: 50vh;
+}
+
+.projects-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
 }
 
-h1 {
-    color: #6bd50e;
+.projects-list ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-p {
-    color: #203588;
+.projects-list li {
+    margin: 10px 0;
+}
+
+.projects-list a {
+    text-decoration: none;
+    color: blue;
     font-size: 18px;
 }
