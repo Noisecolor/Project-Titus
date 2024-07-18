@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Project-Titus/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Project-Titus/static/js/main.4d9d6450.chunk.js",
-    "main.js.map": "/Project-Titus/static/js/main.4d9d6450.chunk.js.map",
+    "main.js": "/Project-Titus/static/js/main.7582aa02.chunk.js",
+    "main.js.map": "/Project-Titus/static/js/main.7582aa02.chunk.js.map",
     "runtime-main.js": "/Project-Titus/static/js/runtime-main.8db70fae.js",
     "runtime-main.js.map": "/Project-Titus/static/js/runtime-main.8db70fae.js.map",
     "static/js/2.d60f33cb.chunk.js": "/Project-Titus/static/js/2.d60f33cb.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.8db70fae.js",
     "static/js/2.d60f33cb.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.4d9d6450.chunk.js"
+    "static/js/main.7582aa02.chunk.js"
   ]
 }
