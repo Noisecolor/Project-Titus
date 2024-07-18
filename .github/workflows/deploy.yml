@@ -19,14 +19,12 @@ jobs:
         node-version: '20'  # Update to Node.js 20
 
     - name: Install dependencies
-      run: |
-        echo "Installing dependencies..."
-        npm install
+      run: npm install
 
     - name: Build the project
-      run: |
-        echo "Building the project..."
-        npm run build
+      env:
+        NODE_OPTIONS: --openssl-legacy-provider
+      run: npm run build
 
     - name: List build directory contents
       run: |
@@ -39,5 +37,4 @@ jobs:
         server: ftp.petersodja.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # Change this to the build directory
-        server-dir: /  # Adjust this to your server directory
+        local-dir: ./  # Change this to the bui
