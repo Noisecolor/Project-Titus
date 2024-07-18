@@ -16,7 +16,7 @@ jobs:
     - name: Deploy to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp://your-ftp-server.com
+        server: ftp.petersodja.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # The root directory of your project
