@@ -6,12 +6,23 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the project
+      run: npm run build
 
     - name: Deploy to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -19,5 +30,5 @@ jobs:
         server: ftp.petersodja.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./  # This is the directory you want to upload
-        server-dir: /  # This is the directory on your server
+        local-dir: ./build  # Change this to the build directory
+        server-dir: /path/on/ftp/server  # Adjust this to your server directory
