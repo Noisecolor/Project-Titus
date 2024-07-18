@@ -19,10 +19,19 @@ jobs:
         node-version: '20'  # Update to Node.js 20
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        echo "Installing dependencies..."
+        npm install
 
     - name: Build the project
-      run: npm run build
+      run: |
+        echo "Building the project..."
+        npm run build
+
+    - name: List build directory contents
+      run: |
+        echo "Listing build directory contents..."
+        ls -la build/
 
     - name: Deploy to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
