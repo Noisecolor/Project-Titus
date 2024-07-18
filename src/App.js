@@ -11,10 +11,13 @@ const PROJECTS = [
 ]; // List of projects
 
 function App() {
+  console.log("App component is loaded");
+
   return (
     <div style={{ width: '100vw', height: '100vh', backgroundColor: BACKGROUND_COLOR }}>
       <div style={{ height: '50vh', backgroundColor: HEADER_COLOR }}>
         <ParticleSystem />
+        <p>Debugging message: Header rendered</p>
       </div>
       <div style={{ height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
@@ -23,6 +26,7 @@ function App() {
               <a href={project.href} style={{ color: LINK_COLOR, textDecoration: 'none' }}>
                 {project.name}
               </a>
+              <p>Debugging message: Link {index + 1} rendered</p>
             </li>
           ))}
         </ul>

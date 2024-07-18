@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';  // Ensure you have an App component
+import './index.css';
+import App from './App';
+
+console.log("Index.js is loaded");
 
 ReactDOM.render(
   <React.StrictMode>
@@ -8,3 +11,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+console.log("ReactDOM.render executed");

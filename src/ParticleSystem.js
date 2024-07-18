@@ -1,27 +1,27 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 // Define all variables at the top for easy adjustments
-const PARTICLE_COUNT = 100000; // Number of particles
-const PARTICLE_SIZE = 0.0000001; // Size of each particle
+const PARTICLE_COUNT = 10000; // Number of particles
+const PARTICLE_SIZE = 0.05; // Size of each particle
 const PARTICLE_COLOR = "#00ffcc"; // Color of the particles
 
-// Particle component to handle individual particles
 function Particles() {
   const particlesRef = useRef();
 
-  // Create a buffer of particles
-  const positions = new Float32Array(PARTICLE_COUNT * 3);
-
-  for (let i = 0; i < PARTICLE_COUNT; i++) {
-    positions[i * 3] = (Math.random() - 0.5) * 10;
-    positions[i * 3 + 1] = (Math.random() - 0.5) * 10;
-    positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
-  }
+  // Memoize the positions array to avoid unnecessary recalculations
+  const positions = useMemo(() => {
+    const positionsArray = new Float32Array(PARTICLE_COUNT * 3);
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      positionsArray[i * 3] = (Math.random() - 0.5) * 10;
+      positionsArray[i * 3 + 1] = (Math.random() - 0.5) * 10;
+      positionsArray[i * 3 + 2] = (Math.random() - 0.5) * 10;
+    }
+    return positionsArray;
+  }, []);
 
   useEffect(() => {
-    // Set the position attribute for the particles
     particlesRef.current.geometry.setAttribute(
       'position',
       new THREE.BufferAttribute(positions, 3)
@@ -29,7 +29,6 @@ function Particles() {
   }, [positions]);
 
   useFrame(() => {
-    // Rotate particles on each frame
     particlesRef.current.rotation.x += 0.001;
     particlesRef.current.rotation.y += 0.001;
   });
@@ -42,7 +41,6 @@ function Particles() {
   );
 }
 
-// Main ParticleSystem component
 function ParticleSystem() {
   return (
     <Canvas>
