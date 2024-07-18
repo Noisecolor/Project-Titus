@@ -10,7 +10,7 @@ const PARTICLE_COLOR = "#00ffcc"; // Color of the particles
 function Particles() {
   const particlesRef = useRef();
 
-  // Memoize the positions array to avoid unnecessary recalculations - 245
+  // Memoize the positions array to avoid unnecessary recalculations 
   const positions = useMemo(() => {
     const positionsArray = new Float32Array(PARTICLE_COUNT * 3);
     for (let i = 0; i < PARTICLE_COUNT; i++) {

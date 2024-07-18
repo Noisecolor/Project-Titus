@@ -4,7 +4,7 @@ import ParticleSystem from './ParticleSystem';
 // Define all variables at the top for easy adjustments
 const BACKGROUND_COLOR = '#1c1c1c'; // Background color of the entire app
 const HEADER_COLOR = 'black'; // Background color of the header
-const LINK_COLOR = '#00ffcc'; // Color of the links - 3451234
+const LINK_COLOR = '#00ffcc'; // Color of the links 
 const PROJECTS = [
   { name: 'Project 1', href: 'project1/index.html' },
   { name: 'Project 2', href: 'project2/index.html' },
