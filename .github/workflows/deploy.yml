@@ -19,6 +19,6 @@ jobs:
         server: ftp.petersodja.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./build  # The root directory of your project
+        local-dir: ./build/  # The root directory of your project
         server-dir: /  # The exact directory on your server
         exclude: '.git*'  # Exclude the .git directory and any other files you don't want to upload
