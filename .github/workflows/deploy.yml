@@ -3,7 +3,7 @@ name: Deploy to cPanel
 on:
   push:
     branches:
-      - main
+      - gh-pages
 
 jobs:
   deploy:
@@ -20,5 +20,5 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # The root directory of your project
-        server-dir: /  # The exact directory on your server
+        server-dir: /  # The exact directory on your server - tt45645645
         exclude: '.git*'  # Exclude the .git directory and any other files you don't want to upload
